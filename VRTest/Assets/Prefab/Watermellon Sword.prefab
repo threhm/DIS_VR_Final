@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 3034272306602753049}
   m_Layer: 0
   m_Name: Watermellon Sword
-  m_TagString: Untagged
+  m_TagString: sword
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
