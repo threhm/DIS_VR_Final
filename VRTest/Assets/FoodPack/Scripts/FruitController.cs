@@ -13,12 +13,13 @@ public class FruitController : MonoBehaviour
     {
         boxCollider = GetComponent<BoxCollider>();
         fruitPos = transform.position;
-        boxCollider.isTrigger = false;
+        boxCollider.isTrigger = true;
         boxCollider.enabled = true;
     }
 
     private void OnTriggerEnter(Collider col)
     {
+        Debug.Log("test");
         if (col.CompareTag("sword"))
         {
             Instantiate(slicedFruit, fruitPos, Quaternion.identity);

@@ -6,6 +6,8 @@ public class MovementMarker : MonoBehaviour
 {
     // Start is called before the first frame update
 
+    public float speed = 0.05f;
+
     public GameObject nextMarker;
 
     void Start()
