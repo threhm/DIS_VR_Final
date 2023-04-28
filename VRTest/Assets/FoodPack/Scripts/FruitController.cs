@@ -23,6 +23,7 @@ public class FruitController : MonoBehaviour
         if (col.CompareTag("sword"))
         {
             Instantiate(slicedFruit, fruitPos, Quaternion.identity);
+            ScoreControl.incrementScore();
             Destroy(gameObject);
         }
     }
