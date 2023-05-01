@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class ScoreBoardController : MonoBehaviour
+public class UIManager : MonoBehaviour
 {
     public TMP_Text text;
-    private static ScoreBoardController _instance;
+    private static UIManager _instance;
 
     // Connects the class scope to the instance scope
     private void Awake()

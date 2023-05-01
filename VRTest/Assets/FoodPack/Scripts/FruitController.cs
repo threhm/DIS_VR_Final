@@ -24,6 +24,7 @@ public class FruitController : MonoBehaviour
         {
             Instantiate(slicedFruit, fruitPos, Quaternion.identity);
             ScoreControl.incrementScore();
+            UIManager.UpdateScore();
             Destroy(gameObject);
         }
     }
