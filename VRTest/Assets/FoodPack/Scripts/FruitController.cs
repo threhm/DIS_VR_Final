@@ -10,12 +10,6 @@ public class FruitController : MonoBehaviour
 
     Vector3 fruitPos;
 
-    public float magnitude = 1.0f;
-    public int shotAngle = 50;
-    public int xDirection = -1;
-    public int yDirection = 0;
-    public int zDirection = 0;
-
     public GameObject slicedFruit;
 
     // Start is called before the first frame update
@@ -26,14 +20,6 @@ public class FruitController : MonoBehaviour
         fruitPos = transform.position;
         boxCollider.isTrigger = true;
         boxCollider.enabled = true;
-        SetupRb(appleRigidbody);
-    }
-
-    private void SetupRb(Rigidbody rg)
-    {
-        GetComponent<Rigidbody>().WakeUp();
-        Vector3 movement = Quaternion.AngleAxis(shotAngle, new Vector3(xDirection, yDirection, zDirection)) * new Vector3(magnitude, magnitude, magnitude);
-        rg.velocity = movement;
     }
 
     private void OnTriggerEnter(Collider col)
@@ -50,6 +36,5 @@ public class FruitController : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
     }
 }

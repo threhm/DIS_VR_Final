@@ -4,20 +4,36 @@ using UnityEngine;
 
 public class FruitSpawn : MonoBehaviour
 {
-    public float spawnWidth = 1;
-    public float spawnRate = 1;
+    public float spawnRate = 1f;
+    public bool startShooting = true;
+
     public GameObject fruitPrefab;
+
+    Vector3 cannonPos;
+    public float magnitude = 5.0f;
 
     private float lastSpawnTime = 0;
 
+    void Start()
+    {
+        cannonPos = transform.parent.transform.position;
+    }
+
     void Update()
     {
-        if (lastSpawnTime + 1 / spawnRate < Time.time)
+        if (startShooting && lastSpawnTime + 1 / spawnRate < Time.time)
         {
             lastSpawnTime = Time.time;
-            Vector3 spawnPosition = transform.position;
-            spawnPosition += new Vector3(Random.Range(-spawnWidth, spawnWidth), 0, 0);
-            Instantiate(fruitPrefab, spawnPosition, Quaternion.identity);
+            GameObject fruit = Instantiate(fruitPrefab, transform.position, Quaternion.identity);
+            Shoot(fruit.GetComponent<Rigidbody>());
         }
+    }
+
+    private void Shoot(Rigidbody rg)
+    {
+        rg.WakeUp();
+        Vector3 fireDirection = transform.position - cannonPos;
+        Vector3 movement = new Vector3(fireDirection.x * magnitude, fireDirection.y * magnitude, fireDirection.z * magnitude);
+        rg.velocity = movement;
     }
 }
