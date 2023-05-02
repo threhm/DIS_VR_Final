@@ -94,7 +94,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnRate: 5
   startShooting: 1
-  fruitPrefab: {fileID: 7054235842879719072, guid: c45cf83d6d25e400fb4e600936ce86e5, type: 3}
+  fruitPrefab: {fileID: 5118933271526290432, guid: 66da0ac1c15e24bb29866ac9d68a9945, type: 3}
   magnitude: 8
 --- !u!1 &3246664731558113209
 GameObject:
@@ -243,5 +243,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnRate: 5
   startShooting: 1
-  fruitPrefab: {fileID: 7054235842879719072, guid: c45cf83d6d25e400fb4e600936ce86e5, type: 3}
+  fruitPrefab: {fileID: 4413508578649391122, guid: 4293fb040465a4db78f2bc6a3b1f4151, type: 3}
   magnitude: 8
