@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class FruitController : MonoBehaviour
 {
-    BoxCollider boxCollider;
+    SphereCollider boxCollider;
     Rigidbody appleRigidbody;
 
     Vector3 fruitPos;
@@ -15,7 +15,7 @@ public class FruitController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        boxCollider = GetComponent<BoxCollider>();
+        boxCollider = GetComponent<SphereCollider>();
         appleRigidbody = GetComponent<Rigidbody>();
         fruitPos = transform.position;
         boxCollider.isTrigger = true;

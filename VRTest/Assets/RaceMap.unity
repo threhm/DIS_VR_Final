@@ -21267,18 +21267,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7687220922609884186, guid: c45cf83d6d25e400fb4e600936ce86e5, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7687220922609884186, guid: c45cf83d6d25e400fb4e600936ce86e5, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7687220922609884186, guid: c45cf83d6d25e400fb4e600936ce86e5, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7687220922609884186, guid: c45cf83d6d25e400fb4e600936ce86e5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 140.63806
       objectReference: {fileID: 0}
@@ -26670,6 +26658,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: fruitPrefab
+      value: 
+      objectReference: {fileID: 5118933271526290432, guid: 66da0ac1c15e24bb29866ac9d68a9945, type: 3}
     - target: {fileID: 2757796111551771907, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -26718,5 +26710,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cannon
       objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: fruitPrefab
+      value: 
+      objectReference: {fileID: 4413508578649391122, guid: 4293fb040465a4db78f2bc6a3b1f4151, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
