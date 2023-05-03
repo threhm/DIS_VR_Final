@@ -22,6 +22,11 @@ public class FruitController : MonoBehaviour
         boxCollider.enabled = true;
     }
 
+    void Update()
+    {
+        fruitPos = transform.position;
+    }
+
     private void OnTriggerEnter(Collider col)
     {
         Debug.Log("test");
