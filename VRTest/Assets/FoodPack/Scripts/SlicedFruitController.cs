@@ -25,6 +25,6 @@ public class SlicedFruitController : MonoBehaviour
     private void rgUpdate(Rigidbody rigidbody)
     {
         rigidbody.WakeUp();
-        rigidbody.AddForce(Random.insideUnitCircle * sliceForce);
+        rigidbody.AddForce(Random.insideUnitSphere * sliceForce);
     }
 }
