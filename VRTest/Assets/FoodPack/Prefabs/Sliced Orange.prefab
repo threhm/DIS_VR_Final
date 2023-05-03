@@ -246,5 +246,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be311ef08149c4c23a09d1c68e182dab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sliceForce: 0.1
+  sliceForce: 100
   fallingTime: 2

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SlicedFruitController : MonoBehaviour
 {
-    public float sliceForce = 0.1f;
+    public float sliceForce = 100f;
     public float fallingTime = 2f;
     // Start is called before the first frame update
     void Start()
