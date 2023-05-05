@@ -45,10 +45,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d584721283ea34bfa9cdafee0003fadd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 0.5
+  spawnRate: 0.8
   startShooting: 1
   fruitPrefab: {fileID: 7054235842879719072, guid: c45cf83d6d25e400fb4e600936ce86e5, type: 3}
-  magnitude: 8
+  magnitude: 4
 --- !u!1 &728173046
 GameObject:
   m_ObjectHideFlags: 0

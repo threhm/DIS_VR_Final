@@ -1,17 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class StartApple : MonoBehaviour
 {
     BoxCollider boxCollider;
-    Vector3 fruitPos;
+
+    public TMP_Text finalScoreText;
+
+    public TMP_Text tutorialText1;
+
+    public TMP_Text tutorialText2;
 
     // Start is called before the first frame update
     void Start()
     {
         boxCollider = GetComponent<BoxCollider>();
-        fruitPos = transform.position;
         boxCollider.isTrigger = true;
         boxCollider.enabled = true;
     }
@@ -22,6 +27,9 @@ public class StartApple : MonoBehaviour
         if (col.CompareTag("sword"))
         {
             GameObject.Find("XR Origin").GetComponent<PlayerMover>().speed = 0.05f;
+            finalScoreText.gameObject.SetActive(true);
+            tutorialText1.gameObject.SetActive(false);
+            tutorialText2.gameObject.SetActive(false);
             Destroy(this.gameObject);
         }
     }

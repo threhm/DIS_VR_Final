@@ -29,7 +29,7 @@ public class FruitController : MonoBehaviour
 
     private void OnTriggerEnter(Collider col)
     {
-        Debug.Log("test");
+        //Debug.Log("test");
         if (col.CompareTag("sword")) // Sliced fruits
         {
             Instantiate(slicedFruit, fruitPos, Quaternion.identity);
