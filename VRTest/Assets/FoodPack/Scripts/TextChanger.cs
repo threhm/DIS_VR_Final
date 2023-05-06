@@ -24,10 +24,10 @@ public class TextChanger : MonoBehaviour
 
     private void OnTriggerEnter(Collider col)
     {
-        Debug.Log("hit");
+        //Debug.Log("hit");
         if (col.CompareTag("player")) // Sliced fruits
         {
-            Debug.Log("got here");
+            //Debug.Log("got here");
             finalScoreText.gameObject.SetActive(true);
             tutorialText1.gameObject.SetActive(false);
             tutorialText2.gameObject.SetActive(false);
