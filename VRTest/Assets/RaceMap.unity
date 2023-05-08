@@ -1094,7 +1094,7 @@ MonoBehaviour:
   spawnRate: 0.8
   startShooting: 1
   fruitPrefab: {fileID: 6077841810049314703, guid: 9a683235cb231471185f3907aaffba1c, type: 3}
-  magnitude: 8
+  magnitude: 4
 --- !u!1001 &40459190
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6310,7 +6310,7 @@ MonoBehaviour:
   spawnRate: 0.8
   startShooting: 1
   fruitPrefab: {fileID: 6077841810049314703, guid: 9a683235cb231471185f3907aaffba1c, type: 3}
-  magnitude: 8
+  magnitude: 4
 --- !u!1001 &181220547
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11778,7 +11778,7 @@ MonoBehaviour:
   spawnRate: 0.8
   startShooting: 1
   fruitPrefab: {fileID: 6077841810049314703, guid: 9a683235cb231471185f3907aaffba1c, type: 3}
-  magnitude: 8
+  magnitude: 4
 --- !u!1001 &377646293
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13714,7 +13714,7 @@ MonoBehaviour:
   spawnRate: 0.8
   startShooting: 1
   fruitPrefab: {fileID: 6077841810049314703, guid: 9a683235cb231471185f3907aaffba1c, type: 3}
-  magnitude: 8
+  magnitude: 4
 --- !u!1001 &442987737
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18529,7 +18529,7 @@ MonoBehaviour:
   spawnRate: 0.8
   startShooting: 1
   fruitPrefab: {fileID: 6077841810049314703, guid: 9a683235cb231471185f3907aaffba1c, type: 3}
-  magnitude: 8
+  magnitude: 4
 --- !u!1001 &590148356
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20695,7 +20695,7 @@ MonoBehaviour:
   spawnRate: 0.8
   startShooting: 1
   fruitPrefab: {fileID: 6077841810049314703, guid: 9a683235cb231471185f3907aaffba1c, type: 3}
-  magnitude: 8
+  magnitude: 4
 --- !u!1 &639333603 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6827103328163588992, guid: 70be9c3a81f78604d9c9d58c86b98952, type: 3}
@@ -28052,7 +28052,7 @@ MonoBehaviour:
   spawnRate: 0.8
   startShooting: 1
   fruitPrefab: {fileID: 6077841810049314703, guid: 9a683235cb231471185f3907aaffba1c, type: 3}
-  magnitude: 8
+  magnitude: 4
 --- !u!1001 &858229288
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31974,7 +31974,7 @@ MonoBehaviour:
   spawnRate: 0.8
   startShooting: 1
   fruitPrefab: {fileID: 6077841810049314703, guid: 9a683235cb231471185f3907aaffba1c, type: 3}
-  magnitude: 8
+  magnitude: 4
 --- !u!1 &974926599 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6788538757290762323, guid: ad4137f595ec8e2449cacca9df7d3735, type: 3}
@@ -34323,7 +34323,7 @@ MonoBehaviour:
   spawnRate: 0.8
   startShooting: 1
   fruitPrefab: {fileID: 6077841810049314703, guid: 9a683235cb231471185f3907aaffba1c, type: 3}
-  magnitude: 8
+  magnitude: 4
 --- !u!1001 &1049380464
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35756,7 +35756,7 @@ MonoBehaviour:
   spawnRate: 0.8
   startShooting: 1
   fruitPrefab: {fileID: 6077841810049314703, guid: 9a683235cb231471185f3907aaffba1c, type: 3}
-  magnitude: 8
+  magnitude: 4
 --- !u!1001 &1095510064
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40564,7 +40564,7 @@ MonoBehaviour:
   spawnRate: 0.8
   startShooting: 1
   fruitPrefab: {fileID: 6077841810049314703, guid: 9a683235cb231471185f3907aaffba1c, type: 3}
-  magnitude: 8
+  magnitude: 4
 --- !u!1001 &1247614775
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42264,7 +42264,7 @@ MonoBehaviour:
   spawnRate: 0.8
   startShooting: 1
   fruitPrefab: {fileID: 6077841810049314703, guid: 9a683235cb231471185f3907aaffba1c, type: 3}
-  magnitude: 8
+  magnitude: 4
 --- !u!1001 &1302933986
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44137,7 +44137,7 @@ MonoBehaviour:
   spawnRate: 0.8
   startShooting: 1
   fruitPrefab: {fileID: 6077841810049314703, guid: 9a683235cb231471185f3907aaffba1c, type: 3}
-  magnitude: 8
+  magnitude: 4
 --- !u!1001 &1387957268
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56282,7 +56282,7 @@ MonoBehaviour:
   spawnRate: 0.8
   startShooting: 1
   fruitPrefab: {fileID: 6077841810049314703, guid: 9a683235cb231471185f3907aaffba1c, type: 3}
-  magnitude: 8
+  magnitude: 4
 --- !u!1001 &1783414144
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63771,7 +63771,7 @@ MonoBehaviour:
   spawnRate: 0.8
   startShooting: 1
   fruitPrefab: {fileID: 6077841810049314703, guid: 9a683235cb231471185f3907aaffba1c, type: 3}
-  magnitude: 8
+  magnitude: 4
 --- !u!1001 &2046202889
 PrefabInstance:
   m_ObjectHideFlags: 0
