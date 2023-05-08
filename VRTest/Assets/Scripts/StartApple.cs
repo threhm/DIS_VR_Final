@@ -13,6 +13,9 @@ public class StartApple : MonoBehaviour
 
     public TMP_Text tutorialText2;
 
+    public GameObject restartApple;
+    public TMP_Text restartText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +33,8 @@ public class StartApple : MonoBehaviour
             finalScoreText.gameObject.SetActive(true);
             tutorialText1.gameObject.SetActive(false);
             tutorialText2.gameObject.SetActive(false);
+            restartApple.gameObject.SetActive(true);
+            restartText.gameObject.SetActive(true);
             Destroy(this.gameObject);
         }
     }
