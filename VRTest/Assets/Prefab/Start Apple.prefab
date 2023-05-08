@@ -114,6 +114,8 @@ MonoBehaviour:
   finalScoreText: {fileID: 0}
   tutorialText1: {fileID: 0}
   tutorialText2: {fileID: 0}
+  restartApple: {fileID: 0}
+  restartText: {fileID: 0}
 --- !u!114 &2797471945211203972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,4 +128,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03ca1f27959d4497fae2b7ce3af8fe53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slicedFruit: {fileID: 4094742487907201068, guid: 9677fb046494b4a4aaf4561758e679de, type: 3}
+  slicedFruit: {fileID: 7230253729547540288, guid: 1907f971ece7d42479e1e0f0c9895cc9, type: 3}
