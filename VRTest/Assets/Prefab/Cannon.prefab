@@ -93,7 +93,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d584721283ea34bfa9cdafee0003fadd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 5
+  spawnRate: 0.8
   startShooting: 0
   fruitPrefab: {fileID: 5118933271526290432, guid: 66da0ac1c15e24bb29866ac9d68a9945, type: 3}
   magnitude: 4
@@ -339,7 +339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d584721283ea34bfa9cdafee0003fadd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 5
+  spawnRate: 0.8
   startShooting: 0
   fruitPrefab: {fileID: 4413508578649391122, guid: 4293fb040465a4db78f2bc6a3b1f4151, type: 3}
   magnitude: 4
