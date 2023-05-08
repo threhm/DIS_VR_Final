@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03ca1f27959d4497fae2b7ce3af8fe53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slicedFruit: {fileID: 4303651545596459357, guid: 93b9678738ec0418899f0d3ebf2d1b8b, type: 3}
+  slicedFruit: {fileID: 4303651545596459357, guid: a702d4a37384e45db8e3e2db5dc03d64, type: 3}
 --- !u!135 &1191962832667098293
 SphereCollider:
   m_ObjectHideFlags: 0
