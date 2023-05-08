@@ -15,4 +15,9 @@ public static class ScoreControl
     {
         return playerScore;
     }
+
+    public static void resetScore()
+    {
+        playerScore = 0;
+    }
 }

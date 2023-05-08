@@ -21,6 +21,7 @@ public class RestartApple : MonoBehaviour
         
         if (col.CompareTag("sword"))
         {
+            ScoreControl.resetScore();
             Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
         }
     }
