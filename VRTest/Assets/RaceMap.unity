@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028305, g: 0.22571313, b: 0.3069213, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1000,6 +1000,54 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 18984d77e93eadf4c825204ff255dde0, type: 3}
   m_PrefabInstance: {fileID: 34382422}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &40168238
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 40168239}
+  - component: {fileID: 40168240}
+  m_Layer: 0
+  m_Name: Fruit Spawn (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &40168239
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 40168238}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.02, y: 0.49, z: 1.35}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 826333915}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &40168240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 40168238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d584721283ea34bfa9cdafee0003fadd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnRate: 0.8
+  startShooting: 1
+  fruitPrefab: {fileID: 6077841810049314703, guid: 9a683235cb231471185f3907aaffba1c, type: 3}
+  magnitude: 8
 --- !u!1001 &40459190
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1350,6 +1398,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1195154829}
     m_Modifications:
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2757796111551771907, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_RootOrder
       value: 66
@@ -1397,6 +1453,18 @@ PrefabInstance:
     - target: {fileID: 3246664731558113209, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_Name
       value: Cannon (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861974, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.244
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
@@ -3536,6 +3604,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1195154829}
     m_Modifications:
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2757796111551771907, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_RootOrder
       value: 68
@@ -3583,6 +3659,18 @@ PrefabInstance:
     - target: {fileID: 3246664731558113209, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_Name
       value: Cannon (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861974, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.222
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
@@ -5005,6 +5093,103 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6c1f65fa87796294dbdb0368a502e3cf, type: 3}
   m_PrefabInstance: {fileID: 156169712}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &157164271
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 157164272}
+  - component: {fileID: 157164275}
+  - component: {fileID: 157164274}
+  - component: {fileID: 157164273}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &157164272
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157164271}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1159871348}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &157164273
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157164271}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &157164274
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157164271}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &157164275
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157164271}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &159526149
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6083,6 +6268,54 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4557757265253404, guid: 5c9211eb71cff4f4996a21d92317f601, type: 3}
   m_PrefabInstance: {fileID: 179931975}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &180990189
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 180990190}
+  - component: {fileID: 180990191}
+  m_Layer: 0
+  m_Name: Fruit Spawn (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &180990190
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180990189}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.02, y: 0.64, z: 1.35}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1787931931}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &180990191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180990189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d584721283ea34bfa9cdafee0003fadd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnRate: 0.8
+  startShooting: 1
+  fruitPrefab: {fileID: 6077841810049314703, guid: 9a683235cb231471185f3907aaffba1c, type: 3}
+  magnitude: 8
 --- !u!1001 &181220547
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10485,6 +10718,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1195154829}
     m_Modifications:
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2757796111551771907, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_RootOrder
       value: 80
@@ -10532,6 +10773,18 @@ PrefabInstance:
     - target: {fileID: 3246664731558113209, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_Name
       value: Cannon (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861974, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
@@ -11244,6 +11497,103 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4383882971595202, guid: e1154cf6ac27b2f45b4ae35582e7e363, type: 3}
   m_PrefabInstance: {fileID: 366294225}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &369399770
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 369399771}
+  - component: {fileID: 369399774}
+  - component: {fileID: 369399773}
+  - component: {fileID: 369399772}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &369399771
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369399770}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1403383227}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &369399772
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369399770}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &369399773
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369399770}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &369399774
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369399770}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &370291987
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11381,6 +11731,54 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4418469335166708, guid: 5286e490afadac545ae3a1595b1e96e1, type: 3}
   m_PrefabInstance: {fileID: 375793401}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &376777434
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 376777435}
+  - component: {fileID: 376777436}
+  m_Layer: 0
+  m_Name: Fruit Spawn (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &376777435
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376777434}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.02, y: 0.71, z: 1.35}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2095373044}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &376777436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376777434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d584721283ea34bfa9cdafee0003fadd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnRate: 0.8
+  startShooting: 1
+  fruitPrefab: {fileID: 6077841810049314703, guid: 9a683235cb231471185f3907aaffba1c, type: 3}
+  magnitude: 8
 --- !u!1001 &377646293
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12621,6 +13019,55 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4019303215891802, guid: efd8147160aa6c64c8121a2ed788744e, type: 3}
   m_PrefabInstance: {fileID: 416417325}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &417692718
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 417692719}
+  - component: {fileID: 417692720}
+  m_Layer: 0
+  m_Name: Fruit Spawn (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &417692719
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417692718}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.021, y: 0.589, z: 1.35}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 850470141}
+  m_Father: {fileID: 1496776309}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &417692720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417692718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d584721283ea34bfa9cdafee0003fadd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnRate: 0.8
+  startShooting: 1
+  fruitPrefab: {fileID: 6077841810049314703, guid: 9a683235cb231471185f3907aaffba1c, type: 3}
+  magnitude: 4
 --- !u!1001 &423386748
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13210,6 +13657,54 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4607489187838822, guid: 00e2e59cbc04eab4a982218df54ce70b, type: 3}
   m_PrefabInstance: {fileID: 442730098}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &442956440
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 442956441}
+  - component: {fileID: 442956442}
+  m_Layer: 0
+  m_Name: Fruit Spawn (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &442956441
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442956440}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.02, y: 0.58, z: 1.35}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1310191906}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &442956442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442956440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d584721283ea34bfa9cdafee0003fadd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnRate: 0.8
+  startShooting: 1
+  fruitPrefab: {fileID: 6077841810049314703, guid: 9a683235cb231471185f3907aaffba1c, type: 3}
+  magnitude: 8
 --- !u!1001 &442987737
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13748,6 +14243,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1195154829}
     m_Modifications:
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2757796111551771907, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_RootOrder
       value: 82
@@ -13796,6 +14299,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cannon (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861974, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
 --- !u!4 &464336307 stripped
@@ -13803,6 +14318,55 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2757796111551771907, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
   m_PrefabInstance: {fileID: 464336306}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &465110366
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 465110367}
+  - component: {fileID: 465110368}
+  m_Layer: 0
+  m_Name: Fruit Spawn (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &465110367
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465110366}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.021, y: 0.61, z: 1.35}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 786762647}
+  m_Father: {fileID: 1289404763}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &465110368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465110366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d584721283ea34bfa9cdafee0003fadd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnRate: 0.8
+  startShooting: 1
+  fruitPrefab: {fileID: 6077841810049314703, guid: 9a683235cb231471185f3907aaffba1c, type: 3}
+  magnitude: 4
 --- !u!1 &467591146 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6827103328163588992, guid: 70be9c3a81f78604d9c9d58c86b98952, type: 3}
@@ -17989,6 +18553,54 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4631977158232566, guid: 6dcae7204dd466c4c862bc640ea7c02e, type: 3}
   m_PrefabInstance: {fileID: 587809617}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &589684068
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 589684069}
+  - component: {fileID: 589684070}
+  m_Layer: 0
+  m_Name: Fruit Spawn (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &589684069
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589684068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.02, y: 0.57, z: 1.35}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1893844089}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &589684070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589684068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d584721283ea34bfa9cdafee0003fadd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnRate: 0.8
+  startShooting: 1
+  fruitPrefab: {fileID: 6077841810049314703, guid: 9a683235cb231471185f3907aaffba1c, type: 3}
+  magnitude: 8
 --- !u!1001 &590148356
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20107,6 +20719,54 @@ PrefabInstance:
       objectReference: {fileID: 1320962575}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70be9c3a81f78604d9c9d58c86b98952, type: 3}
+--- !u!1 &634032171
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 634032172}
+  - component: {fileID: 634032173}
+  m_Layer: 0
+  m_Name: Fruit Spawn (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &634032172
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634032171}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.02, y: 0.577, z: 1.35}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1569857391}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &634032173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634032171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d584721283ea34bfa9cdafee0003fadd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnRate: 0.8
+  startShooting: 1
+  fruitPrefab: {fileID: 6077841810049314703, guid: 9a683235cb231471185f3907aaffba1c, type: 3}
+  magnitude: 8
 --- !u!1 &639333603 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6827103328163588992, guid: 70be9c3a81f78604d9c9d58c86b98952, type: 3}
@@ -22937,6 +23597,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1195154829}
     m_Modifications:
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2757796111551771907, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_RootOrder
       value: 78
@@ -22984,6 +23652,18 @@ PrefabInstance:
     - target: {fileID: 3246664731558113209, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_Name
       value: Cannon (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861974, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
@@ -24114,6 +24794,55 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6827103328163588998, guid: 70be9c3a81f78604d9c9d58c86b98952, type: 3}
   m_PrefabInstance: {fileID: 776330460}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &777564803
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 777564804}
+  - component: {fileID: 777564805}
+  m_Layer: 0
+  m_Name: Fruit Spawn (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &777564804
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777564803}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.021, y: 0.56, z: 1.35}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1575622666}
+  m_Father: {fileID: 464336307}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &777564805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777564803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d584721283ea34bfa9cdafee0003fadd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnRate: 0.8
+  startShooting: 1
+  fruitPrefab: {fileID: 6077841810049314703, guid: 9a683235cb231471185f3907aaffba1c, type: 3}
+  magnitude: 4
 --- !u!1001 &777714931
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24244,6 +24973,103 @@ PrefabInstance:
       objectReference: {fileID: 1944618190}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70be9c3a81f78604d9c9d58c86b98952, type: 3}
+--- !u!1 &786762646
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 786762647}
+  - component: {fileID: 786762650}
+  - component: {fileID: 786762649}
+  - component: {fileID: 786762648}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &786762647
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786762646}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 465110367}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &786762648
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786762646}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &786762649
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786762646}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &786762650
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786762646}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &787133580
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25875,6 +26701,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1195154829}
     m_Modifications:
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2757796111551771907, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_RootOrder
       value: 69
@@ -25922,6 +26756,18 @@ PrefabInstance:
     - target: {fileID: 3246664731558113209, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_Name
       value: Cannon (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861974, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
@@ -26073,6 +26919,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1195154829}
     m_Modifications:
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2757796111551771907, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_RootOrder
       value: 72
@@ -26120,6 +26974,18 @@ PrefabInstance:
     - target: {fileID: 3246664731558113209, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_Name
       value: Cannon (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861974, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
@@ -26956,6 +27822,103 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 18984d77e93eadf4c825204ff255dde0, type: 3}
   m_PrefabInstance: {fileID: 850337225}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &850470140
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 850470141}
+  - component: {fileID: 850470144}
+  - component: {fileID: 850470143}
+  - component: {fileID: 850470142}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &850470141
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 850470140}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 417692719}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &850470142
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 850470140}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &850470143
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 850470140}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &850470144
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 850470140}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &851008745
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27213,6 +28176,54 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+--- !u!1 &856580435
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 856580436}
+  - component: {fileID: 856580437}
+  m_Layer: 0
+  m_Name: Fruit Spawn (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &856580436
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856580435}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.02, y: 0.58, z: 1.35}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 346908213}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &856580437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856580435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d584721283ea34bfa9cdafee0003fadd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnRate: 0.8
+  startShooting: 1
+  fruitPrefab: {fileID: 6077841810049314703, guid: 9a683235cb231471185f3907aaffba1c, type: 3}
+  magnitude: 8
 --- !u!1001 &858229288
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27404,6 +28415,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1195154829}
     m_Modifications:
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2757796111551771907, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_RootOrder
       value: 76
@@ -27451,6 +28470,18 @@ PrefabInstance:
     - target: {fileID: 3246664731558113209, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_Name
       value: Cannon (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861974, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
@@ -31052,6 +32083,54 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4063210846265680, guid: 186ecc7a1f977cc4fab5658c00fa3c4d, type: 3}
   m_PrefabInstance: {fileID: 973475658}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &974723921
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 974723922}
+  - component: {fileID: 974723923}
+  m_Layer: 0
+  m_Name: Fruit Spawn (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &974723922
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974723921}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.02, y: 0.03, z: 1.35}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 51663173}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &974723923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974723921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d584721283ea34bfa9cdafee0003fadd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnRate: 0.8
+  startShooting: 1
+  fruitPrefab: {fileID: 6077841810049314703, guid: 9a683235cb231471185f3907aaffba1c, type: 3}
+  magnitude: 8
 --- !u!1 &974926599 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6788538757290762323, guid: ad4137f595ec8e2449cacca9df7d3735, type: 3}
@@ -33348,6 +34427,54 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9de24523a11d714db3851b5f0f9d527, type: 3}
+--- !u!1 &1047999020
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1047999021}
+  - component: {fileID: 1047999022}
+  m_Layer: 0
+  m_Name: Fruit Spawn (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1047999021
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047999020}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.02, y: 0.04, z: 1.35}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 817664591}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1047999022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047999020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d584721283ea34bfa9cdafee0003fadd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnRate: 0.8
+  startShooting: 1
+  fruitPrefab: {fileID: 6077841810049314703, guid: 9a683235cb231471185f3907aaffba1c, type: 3}
+  magnitude: 8
 --- !u!1001 &1049380464
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34728,6 +35855,54 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2757796111551771907, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
   m_PrefabInstance: {fileID: 1091557139}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1094986906
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1094986907}
+  - component: {fileID: 1094986908}
+  m_Layer: 0
+  m_Name: Fruit Spawn (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1094986907
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094986906}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.02, y: 0.62, z: 1.35}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 734285894}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1094986908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094986906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d584721283ea34bfa9cdafee0003fadd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnRate: 0.8
+  startShooting: 1
+  fruitPrefab: {fileID: 6077841810049314703, guid: 9a683235cb231471185f3907aaffba1c, type: 3}
+  magnitude: 8
 --- !u!1001 &1095510064
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34996,6 +36171,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1195154829}
     m_Modifications:
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2757796111551771907, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_RootOrder
       value: 70
@@ -35043,6 +36226,18 @@ PrefabInstance:
     - target: {fileID: 3246664731558113209, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_Name
       value: Cannon (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861974, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
@@ -36552,6 +37747,55 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7e7fd8677131a3845a72defbd58121e0, type: 3}
   m_PrefabInstance: {fileID: 1154801810}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1159871347
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1159871348}
+  - component: {fileID: 1159871349}
+  m_Layer: 0
+  m_Name: Fruit Spawn (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1159871348
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159871347}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.02, y: 0.61, z: 1.35}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 157164272}
+  m_Father: {fileID: 2046202890}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1159871349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159871347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d584721283ea34bfa9cdafee0003fadd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnRate: 0.8
+  startShooting: 1
+  fruitPrefab: {fileID: 6077841810049314703, guid: 9a683235cb231471185f3907aaffba1c, type: 3}
+  magnitude: 4
 --- !u!1001 &1161761509
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39386,6 +40630,54 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6827103328163588992, guid: 70be9c3a81f78604d9c9d58c86b98952, type: 3}
   m_PrefabInstance: {fileID: 1246262008}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1246601435
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1246601436}
+  - component: {fileID: 1246601437}
+  m_Layer: 0
+  m_Name: Fruit Spawn (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1246601436
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246601435}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.02, y: 0.569, z: 1.35}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1475251595}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1246601437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246601435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d584721283ea34bfa9cdafee0003fadd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnRate: 0.8
+  startShooting: 1
+  fruitPrefab: {fileID: 6077841810049314703, guid: 9a683235cb231471185f3907aaffba1c, type: 3}
+  magnitude: 8
 --- !u!1001 &1247614775
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40612,6 +41904,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1195154829}
     m_Modifications:
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2757796111551771907, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_RootOrder
       value: 77
@@ -40659,6 +41959,18 @@ PrefabInstance:
     - target: {fileID: 3246664731558113209, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_Name
       value: Cannon (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861974, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
@@ -41003,6 +42315,54 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6827103328163588998, guid: 70be9c3a81f78604d9c9d58c86b98952, type: 3}
   m_PrefabInstance: {fileID: 1968660303}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1300062781
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1300062782}
+  - component: {fileID: 1300062783}
+  m_Layer: 0
+  m_Name: Fruit Spawn (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1300062782
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300062781}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.02, y: 0.33, z: 1.35}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 119343242}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1300062783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300062781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d584721283ea34bfa9cdafee0003fadd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnRate: 0.8
+  startShooting: 1
+  fruitPrefab: {fileID: 6077841810049314703, guid: 9a683235cb231471185f3907aaffba1c, type: 3}
+  magnitude: 8
 --- !u!1001 &1302933986
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41080,6 +42440,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1195154829}
     m_Modifications:
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2757796111551771907, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_RootOrder
       value: 73
@@ -41127,6 +42495,18 @@ PrefabInstance:
     - target: {fileID: 3246664731558113209, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_Name
       value: Cannon (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861974, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
@@ -42928,6 +44308,54 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4383882971595202, guid: e1154cf6ac27b2f45b4ae35582e7e363, type: 3}
   m_PrefabInstance: {fileID: 1383639391}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1384709041
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1384709042}
+  - component: {fileID: 1384709043}
+  m_Layer: 0
+  m_Name: Fruit Spawn (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1384709042
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384709041}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.02, y: 0.66, z: 1.35}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1415391970}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1384709043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384709041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d584721283ea34bfa9cdafee0003fadd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnRate: 0.8
+  startShooting: 1
+  fruitPrefab: {fileID: 6077841810049314703, guid: 9a683235cb231471185f3907aaffba1c, type: 3}
+  magnitude: 8
 --- !u!1001 &1387957268
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43841,6 +45269,55 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+--- !u!1 &1403383226
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1403383227}
+  - component: {fileID: 1403383228}
+  m_Layer: 0
+  m_Name: Fruit Spawn (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1403383227
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403383226}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.02, y: 0.59, z: 1.35}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 369399771}
+  m_Father: {fileID: 867799604}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1403383228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403383226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d584721283ea34bfa9cdafee0003fadd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnRate: 0.8
+  startShooting: 1
+  fruitPrefab: {fileID: 6077841810049314703, guid: 9a683235cb231471185f3907aaffba1c, type: 3}
+  magnitude: 4
 --- !u!1001 &1403978646
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44353,6 +45830,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1195154829}
     m_Modifications:
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2757796111551771907, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_RootOrder
       value: 74
@@ -44400,6 +45885,18 @@ PrefabInstance:
     - target: {fileID: 3246664731558113209, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_Name
       value: Cannon (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861974, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
@@ -46221,6 +47718,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1195154829}
     m_Modifications:
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2757796111551771907, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_RootOrder
       value: 124
@@ -46268,6 +47773,18 @@ PrefabInstance:
     - target: {fileID: 3246664731558113209, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_Name
       value: Cannon (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861974, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
@@ -47078,6 +48595,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1195154829}
     m_Modifications:
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2757796111551771907, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_RootOrder
       value: 79
@@ -47125,6 +48650,18 @@ PrefabInstance:
     - target: {fileID: 3246664731558113209, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_Name
       value: Cannon (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861974, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.246
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
@@ -48895,6 +50432,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1195154829}
     m_Modifications:
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2757796111551771907, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_RootOrder
       value: 75
@@ -48942,6 +50487,18 @@ PrefabInstance:
     - target: {fileID: 3246664731558113209, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_Name
       value: Cannon (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861974, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.095
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
@@ -49157,6 +50714,103 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6827103328163588998, guid: 70be9c3a81f78604d9c9d58c86b98952, type: 3}
   m_PrefabInstance: {fileID: 1963282922}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1575622665
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1575622666}
+  - component: {fileID: 1575622669}
+  - component: {fileID: 1575622668}
+  - component: {fileID: 1575622667}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1575622666
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575622665}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 777564804}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1575622667
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575622665}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1575622668
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575622665}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1575622669
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575622665}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1576303067
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49164,6 +50818,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1195154829}
     m_Modifications:
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2757796111551771907, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_RootOrder
       value: 67
@@ -49211,6 +50873,18 @@ PrefabInstance:
     - target: {fileID: 3246664731558113209, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_Name
       value: Cannon (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861974, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
@@ -54545,6 +56219,54 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: bf06160e4250ed243a2ac515bfe78755, type: 3}
   m_PrefabInstance: {fileID: 1778361173}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1778728738
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1778728739}
+  - component: {fileID: 1778728740}
+  m_Layer: 0
+  m_Name: Fruit Spawn (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1778728739
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778728738}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.02, y: 0.69, z: 1.35}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1104407981}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1778728740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778728738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d584721283ea34bfa9cdafee0003fadd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnRate: 0.8
+  startShooting: 1
+  fruitPrefab: {fileID: 6077841810049314703, guid: 9a683235cb231471185f3907aaffba1c, type: 3}
+  magnitude: 8
 --- !u!1001 &1783414144
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54693,6 +56415,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1195154829}
     m_Modifications:
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2757796111551771907, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_RootOrder
       value: 81
@@ -54740,6 +56470,18 @@ PrefabInstance:
     - target: {fileID: 3246664731558113209, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_Name
       value: Cannon (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861974, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.249
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
@@ -57330,6 +59072,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1195154829}
     m_Modifications:
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2757796111551771907, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_RootOrder
       value: 84
@@ -57377,6 +59127,18 @@ PrefabInstance:
     - target: {fileID: 3246664731558113209, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_Name
       value: Cannon (75)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861974, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
@@ -61882,6 +63644,54 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2757796111551771907, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
   m_PrefabInstance: {fileID: 1934244532}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2045720761
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2045720762}
+  - component: {fileID: 2045720763}
+  m_Layer: 0
+  m_Name: Fruit Spawn (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2045720762
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2045720761}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.02, y: 0.53, z: 1.35}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1576303068}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2045720763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2045720761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d584721283ea34bfa9cdafee0003fadd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnRate: 0.8
+  startShooting: 1
+  fruitPrefab: {fileID: 6077841810049314703, guid: 9a683235cb231471185f3907aaffba1c, type: 3}
+  magnitude: 8
 --- !u!1001 &2046202889
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61889,6 +63699,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1195154829}
     m_Modifications:
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2757796111551771907, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_RootOrder
       value: 83
@@ -61936,6 +63754,18 @@ PrefabInstance:
     - target: {fileID: 3246664731558113209, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_Name
       value: Cannon (74)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861974, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
@@ -63023,6 +64853,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1195154829}
     m_Modifications:
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 728173048, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2757796111551771907, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_RootOrder
       value: 71
@@ -63070,6 +64908,18 @@ PrefabInstance:
     - target: {fileID: 3246664731558113209, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
       propertyPath: m_Name
       value: Cannon (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861974, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: spawnRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985489491200861977, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
+      propertyPath: startShooting
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1eb2e4a4ff81b496fa93b7425612da28, type: 3}
@@ -64185,7 +66035,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 974926605}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1001 &2133892570
 PrefabInstance:
