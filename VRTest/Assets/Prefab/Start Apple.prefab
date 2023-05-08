@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1008025683321943162}
   - component: {fileID: 5670918027336439777}
   - component: {fileID: 5422014622117307036}
+  - component: {fileID: 2797471945211203972}
   m_Layer: 0
   m_Name: Start Apple
   m_TagString: Untagged
@@ -110,3 +111,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d19b1395fc67444baf182e8df32e8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  finalScoreText: {fileID: 0}
+  tutorialText1: {fileID: 0}
+  tutorialText2: {fileID: 0}
+--- !u!114 &2797471945211203972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1656698442085324207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03ca1f27959d4497fae2b7ce3af8fe53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slicedFruit: {fileID: 4094742487907201068, guid: 9677fb046494b4a4aaf4561758e679de, type: 3}

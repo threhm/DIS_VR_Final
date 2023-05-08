@@ -26,7 +26,7 @@ public class StartApple : MonoBehaviour
         
         if (col.CompareTag("sword"))
         {
-            GameObject.Find("XR Origin").GetComponent<PlayerMover>().speed = 0.05f;
+            GameObject.Find("XR Origin").GetComponent<PlayerMover>().speed = 0.02f;
             finalScoreText.gameObject.SetActive(true);
             tutorialText1.gameObject.SetActive(false);
             tutorialText2.gameObject.SetActive(false);
