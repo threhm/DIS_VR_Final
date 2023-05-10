@@ -22031,7 +22031,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: Hold middle trigger while pointing at a sword to hold it. Use it to slice
-    apples.
+    fruits.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -48377,7 +48377,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Slice apples to score points. Slice the apple on your left to begin.
+  m_text: Slice fruits to score points. Slice the apple on your left to begin.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
